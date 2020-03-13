@@ -1,0 +1,92 @@
+/* Animation for heading primary */
+
+@keyframes moveInLeftMain {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInLeftSub {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInMainBorder {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+
+  80% {
+    width: 40%;
+  }
+
+  100% {
+    opacity: 1;
+    width: 39%;
+  }
+}
+
+@keyframes moveInFooterBorder {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+
+  80% {
+    width: 44%;
+  }
+
+  100% {
+    opacity: 1;
+    width: 42%;
+  }
+}
+
+/* Animation for button */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Button about */
+@keyframes moveInrightArrow {
+  0% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

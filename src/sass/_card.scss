@@ -1,0 +1,117 @@
+.card {
+  background-color: $color-grey-light;
+  height: 50rem;
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: $shadow;
+  padding: 1.2rem;
+
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    /* position: relative;
+    top: 20px;
+    right: -20px; */
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    //background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+
+    &--1 {
+      background-image: linear-gradient(
+          to right,
+          rgba($color-primary-light, 0.5),
+          rgba($color-primary-dark, 0.5)
+        ),
+        url(/images/tour-1.e02ef46dc03d910fa30f955606483789.jpg);
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+          to right,
+          rgba($color-primary-light, 0.5),
+          rgba($color-primary-dark, 0.5)
+        ),
+        url(/images/tour-2.0ed7fa33f7866d1f4e3ad61786a47878.jpg);
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+          to right,
+          rgba($color-primary-light, 0.5),
+          rgba($color-primary-dark, 0.5)
+        ),
+        url(/images/tour-3.83056d74ebdf782a02b56d23e2d9a3d6.jpg);
+    }
+  }
+
+  &__heading {
+    font: {
+      size: 2.8rem;
+      weight: 300;
+    }
+    text-transform: lowercase;
+    letter-spacing: 1rem;
+    color: $color-white;
+    position: absolute;
+    top: 16.5rem;
+    right: 4rem;
+    text-align: right;
+  }
+
+  &__heading-span {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.85),
+      rgba($color-primary-dark, 0.85)
+    );
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+  &__details {
+    padding: 2rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-medium;
+        }
+      }
+    }
+  }
+
+  &__prices {
+    background-image: linear-gradient(
+      to right bottom,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    padding: 0.6rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    font: {
+      size: 2.8rem;
+      weight: 300;
+    }
+    text-transform: lowercase;
+    letter-spacing: 1rem;
+    color: $color-white;
+    position: absolute;
+    bottom: -4.5rem;
+    right: 0rem;
+    text-align: right;
+    transform: rotate(-15deg);
+  }
+}

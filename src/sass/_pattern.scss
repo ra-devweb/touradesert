@@ -1,0 +1,19 @@
+.pattern {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  z-index: 0;
+  transform: rotate(-15deg);
+  width: 10%;
+  height: 80%;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary-light, 0.8),
+    rgba($color-primary-dark, 0.8)
+  );
+
+  &__book {
+    width: 30% !important;
+    right: 40%;
+  }
+}

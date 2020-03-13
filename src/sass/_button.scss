@@ -1,0 +1,119 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: lowercase;
+    padding: 1.5rem 3.5rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    letter-spacing: 0.4rem;
+    transition: all 0.3s;
+
+    position: relative;
+
+    box-shadow: $shadow;
+    background-color: $color-grey-light;
+    color: rgba($color-black, 0.8);
+    font-weight: 600;
+
+    backface-visibility: hidden;
+
+    // change button for input submit element
+    border: none;
+    cursor: pointer;
+  }
+
+  &--text {
+    font-weight: 400;
+    color: $color-primary-light;
+
+    &:active {
+      color: $color-black !important;
+    }
+  }
+
+  /* &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-white, 0.3);
+
+    &::after {
+      transform: scaleX(1.5) scaleY(1.3);
+      opacity: 0;
+    }
+  } */
+
+  &:active,
+  &:focus {
+    box-shadow: $shadow-in;
+    color: $color-grey-dark;
+    outline: none;
+  }
+
+  /* &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2rem;
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+  } */
+
+  /* &--white {
+    background-color: $color-white;
+    color: $color-grey-dark; */
+
+  /* &::after {
+      background-color: $color-white;
+    } 
+  }*/
+
+  &--animation {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.btn-small {
+  &:link,
+  &:visited {
+    display: inline-block;
+    font: {
+      size: $default-font-size;
+      weight: 900;
+    }
+    text-transform: lowercase;
+    letter-spacing: 0.2rem;
+    padding: 2rem 4rem;
+    color: $color-primary-light;
+    text-decoration: none;
+    transition: all 0.3s;
+    //border: 0;
+    border-radius: 2rem;
+    background-color: $color-grey-light;
+    box-shadow: $shadow;
+  }
+
+  &:hover {
+    .fa-arrow-right {
+      animation-name: moveInrightArrow;
+      animation-duration: 0.5s;
+      animation-direction: alternate-reverse;
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    background-color: $color-grey-light;
+    color: $color-primary-dark;
+    box-shadow: $shadow-in;
+  }
+}

@@ -1,0 +1,32 @@
+// Colors
+
+$color-primary-dark: #ff6347;
+$color-primary-medium: #ff7f50;
+$color-primary-light: #ffa07a;
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-grey-dark-3: #333;
+$color-grey-dark-2: #999;
+$color-grey-dark: #777;
+$color-grey-medium: #eee;
+$color-grey-light: #f7f7f7;
+
+// grid
+$grid-width: 114rem;
+$gap-vertical: 8rem;
+$gap-horizontal: 6rem;
+
+// font
+$default-font-size: 1.6rem;
+
+// shadows
+$shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+  inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15),
+  -7px -7px 20px rgba(255, 255, 255, 1),
+  inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+
+$shadow-in: inset 7px 7px 15px rgba(55, 84, 170, 0.15),
+  inset -7px -7px 20px rgba(255, 255, 255, 1),
+  0px 0px 4px rgba(255, 255, 255, 0.2);

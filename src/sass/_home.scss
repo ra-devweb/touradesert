@@ -1,0 +1,44 @@
+.section-about {
+  background-color: $color-grey-light;
+  padding-top: 25rem;
+  padding-bottom: 30rem;
+  margin-top: -20vh;
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.7),
+      rgba($color-grey-dark, 0.7)
+    ),
+    url(/images/features.c5cdc02e2141dc3bdfac02623f77e294.jpg);
+  background-size: cover;
+  background-position: center;
+  transform: skewY(-7deg);
+  margin-top: -8.5rem;
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.section-tours {
+  padding: 25rem 0 15rem 0;
+  background-color: $color-grey-light;
+  margin-top: -8.2rem;
+}
+
+.section-stories {
+  padding: 15rem 0 20rem 0;
+  background-color: $color-grey-light;
+}
+
+.section-book {
+  padding: 15rem 0 13rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+}

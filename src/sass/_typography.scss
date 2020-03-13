@@ -1,0 +1,153 @@
+.heading-primary {
+  color: $color-black;
+  text-transform: lowercase;
+  font-weight: bold;
+
+  backface-visibility: hidden;
+
+  &--main {
+    display: block;
+    font-size: 4rem;
+    letter-spacing: 3.4rem;
+    animation-name: moveInLeftMain;
+    animation-duration: 1s;
+    font-weight: 900;
+
+    position: relative;
+
+    &::before {
+      content: '';
+      height: 2%;
+      width: 39%;
+      background-color: rgba($color-grey-dark, 0.8);
+      position: absolute;
+      top: 1.7rem;
+      left: 0rem;
+      z-index: -1;
+      animation-name: moveInMainBorder;
+      animation-duration: 2s;
+      animation-delay: 2s;
+      animation-fill-mode: backwards;
+      transform: rotate(-2deg);
+    }
+
+    &::after {
+      content: '';
+      height: 2%;
+      width: 39%;
+      background-color: rgba($color-grey-dark, 0.8);
+      position: absolute;
+      bottom: 1.7rem;
+      left: 0rem;
+      animation-name: moveInMainBorder;
+      animation-duration: 2s;
+      animation-delay: 2s;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  &--footer {
+    color: $color-grey-light !important;
+    display: inline-block;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    animation-name: moveInLeftMain;
+    animation-duration: 1s;
+    font-weight: 900;
+
+    position: relative;
+
+    &::before {
+      content: '';
+      height: 2%;
+      width: 42%;
+      background-color: rgba($color-primary-light, 0.8);
+      position: absolute;
+      top: 1.9rem;
+      left: 0rem;
+      animation-name: moveInFooterBorder;
+      animation-duration: 2s;
+      animation-delay: 2s;
+      animation-fill-mode: backwards;
+      transform: rotate(-2deg);
+    }
+
+    &::after {
+      content: '';
+      height: 2%;
+      width: 42%;
+      background-color: rgba($color-primary-light, 0.8);
+      position: absolute;
+      bottom: 1.7rem;
+      left: 0rem;
+      animation-name: moveInFooterBorder;
+      animation-duration: 2s;
+      animation-delay: 2s;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  &--toura {
+    font-weight: 300;
+  }
+
+  &--dote-main {
+    color: $color-grey-dark;
+  }
+
+  &--dote-footer {
+    color: $color-primary-light;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 1.5rem;
+    letter-spacing: 1.4rem;
+    animation-name: moveInLeftSub;
+    animation-duration: 2s;
+    //animation-delay: 2s;
+  }
+}
+
+.heading-secondary {
+  font: {
+    size: 3.5rem;
+    weight: 900;
+  }
+  text-transform: lowercase;
+  letter-spacing: 0.3rem;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    rgba($color-black, 0.7),
+    rgba($color-black, 0.6)
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0.3rem 0.8rem 1rem rgba($color-black, 0.2);
+  transition: all 0.2s;
+
+  &:hover {
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: lowercase;
+
+  &--text-black {
+    color: $color-black;
+  }
+}
+
+.paragraph {
+  font-size: $default-font-size;
+
+  //&:not(:last-child) {
+  margin-bottom: 3rem;
+  //}
+}

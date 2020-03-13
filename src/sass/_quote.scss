@@ -1,0 +1,15 @@
+.quote-left {
+  position: absolute;
+  top: 2rem;
+  left: 10rem;
+  color: $color-primary-medium;
+  text-shadow: 0 1rem 3rem rgba($color-black, 0.6);
+}
+
+.quote-right {
+  position: absolute;
+  bottom: 2rem;
+  right: 10rem;
+  color: $color-primary-medium;
+  text-shadow: 0 1rem 3rem rgba($color-black, 0.6);
+}
