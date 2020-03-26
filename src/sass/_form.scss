@@ -18,6 +18,10 @@
     display: block;
     color: inherit;
 
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
@@ -54,6 +58,16 @@
     width: 50%;
     display: inline-block;
     text-align: center;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: left;
+      margin-left: 4rem;
+
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
   }
 
   &__radio-input {

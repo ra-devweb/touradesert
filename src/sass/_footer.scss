@@ -5,14 +5,31 @@
   font-size: 1.4rem;
 
   &__logo-box {
+    margin-bottom: 8rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__navigation {
+    display: inline-block;
+
+    margin-left: 10rem;
+
+    @include respond(tab-land) {
+      margin-left: 6rem;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+      margin-left: 0rem;
+    }
   }
 
   &__list {
     list-style: none;
-    display: inline-block;
 
     &::before {
       content: '';
@@ -26,6 +43,11 @@
   &__item {
     display: inline-block;
     letter-spacing: 0.4rem;
+
+    @include respond(tab-port) {
+      letter-spacing: 0.3rem;
+      font-size: 1.6rem;
+    }
 
     &:not(:last-child) {
       margin-right: 1.5rem;
@@ -52,6 +74,12 @@
 
   &__copyright {
     display: inline-block;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+      font-size: 1.8rem;
+    }
 
     &::before {
       content: '';

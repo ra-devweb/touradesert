@@ -15,6 +15,16 @@
 
     position: relative;
 
+    @include respond(tab-port) {
+      letter-spacing: 0.5rem;
+      font-size: 7rem;
+    }
+
+    @include respond(phone) {
+      font-size: 5rem;
+      letter-spacing: 1rem;
+    }
+
     &::before {
       content: '';
       height: 2%;
@@ -29,6 +39,14 @@
       animation-delay: 2s;
       animation-fill-mode: backwards;
       transform: rotate(-2deg);
+
+      @include respond(tab-port) {
+        top: 3.3rem;
+      }
+
+      @include respond(phone) {
+        top: 2.3rem;
+      }
     }
 
     &::after {
@@ -43,6 +61,14 @@
       animation-duration: 2s;
       animation-delay: 2s;
       animation-fill-mode: backwards;
+
+      @include respond(tab-port) {
+        bottom: 2.9rem;
+      }
+
+      @include respond(phone) {
+        bottom: 2.3rem;
+      }
     }
   }
 
@@ -92,7 +118,7 @@
   }
 
   &--dote-main {
-    color: $color-grey-dark;
+    color: $color-black;
   }
 
   &--dote-footer {
@@ -105,6 +131,16 @@
     letter-spacing: 1.4rem;
     animation-name: moveInLeftSub;
     animation-duration: 2s;
+
+    @include respond(tab-port) {
+      font-size: 2.3rem;
+      letter-spacing: 0.5rem;
+    }
+
+    @include respond(phone) {
+      letter-spacing: 0.7rem;
+      font-size: 1.5rem;
+    }
     //animation-delay: 2s;
   }
 }
@@ -114,6 +150,15 @@
     size: 3.5rem;
     weight: 900;
   }
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+
   text-transform: lowercase;
   letter-spacing: 0.3rem;
   display: inline-block;
@@ -150,4 +195,9 @@
   //&:not(:last-child) {
   margin-bottom: 3rem;
   //}
+
+  &::first-letter {
+    font-size: 3rem;
+    color: $color-primary-dark;
+  }
 }

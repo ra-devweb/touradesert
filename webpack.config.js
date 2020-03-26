@@ -53,7 +53,8 @@ module.exports = {
           MiniCssExtractPlugin.loader, // 4. Extract css from commonJS into separate file css
           //'style-loader', // 3. Inject css into the dom
           'css-loader', // 2. Turns css into commonJS
-          'sass-loader' // 1. Turns sass into css
+          'sass-loader', // 1. Turns sass into css
+          'postcss-loader'
         ]
       },
       {

@@ -14,6 +14,16 @@
     z-index: 7777;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.2);
     cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__icon {
@@ -66,6 +76,16 @@
 
     transition: all 0.6s cubic-bezier(0, 0.99, 0.99, 1);
     backface-visibility: hidden;
+
+    @include respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+
+    @include respond(phone) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
 
   &__nav {
@@ -89,6 +109,11 @@
     right: 50%;
     transform: translate(38rem, -50%);
     list-style: none;
+
+    @include respond(tab-port) {
+      transform: translate(50%, -50%);
+      right: 50%;
+    }
   }
 
   &__item {
@@ -114,6 +139,7 @@
         rgba(255, 29, 29, 0.547) 50%,
         $color-white 50%
       );
+
       background-size: 200%;
       transition: all 0.3s;
 
@@ -137,6 +163,17 @@
     top: 0;
     border-radius: 0;
     margin-right: -9rem;
+
+    @include respond(tab-land) {
+      width: 70%;
+      margin-right: -20rem;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+      margin-right: 0;
+      transform: skew(0deg);
+    }
   }
 
   &__checkbox:checked ~ &__nav {

@@ -110,8 +110,12 @@
     color: $color-white;
     position: absolute;
     bottom: -4.5rem;
-    right: 0rem;
+    right: 1rem;
     text-align: right;
     transform: rotate(-15deg);
+
+    @include respond(tab-port) {
+      right: 3rem;
+    }
   }
 }
