@@ -36,3 +36,8 @@ body {
   line-height: 1.7;
   color: $color-grey-dark;
 }
+
+::selection {
+  background-color: $color-primary-dark;
+  color: $color-white;
+}
